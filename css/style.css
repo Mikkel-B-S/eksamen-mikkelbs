@@ -12,7 +12,7 @@ body{
     
 }
 
-form{ 
+nav form{ 
     border: #000 solid 1px;
     border-radius: 30px;
     width: 70%;
@@ -32,6 +32,7 @@ form{
         border-radius: 30px;
     }
 }
+
 ul{
     list-style: none;
 }
@@ -48,9 +49,13 @@ img{
 header nav{ 
 
     
-    form label{
-    visibility: hidden;
-    position:absolute
+    form{
+        width: 250px;
+        
+        label{
+            visibility: hidden;
+            position:absolute;
+        }
     }
 
     
@@ -60,6 +65,7 @@ header nav{
         flex-direction: column;
         padding: 0;   
         align-items: center;     
+        
         li{
             padding: 0.5rem;
         }
@@ -77,30 +83,62 @@ header nav{
 }
 
 #banner{
-    background-image: url(https://picsum.photos/360);
-    background-color: rgba(225, 225, 225, 0.5);
-    padding: 1.5rem;
-    text-align: right;
-    border-radius: 30px;
-    a{
-        background-color: #fff;
-        padding: 0.5rem;
-        font-weight: bold;
+    
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+
+    article{ 
+        display: inline-block;
+        background-image: url(https://picsum.photos/id/46/800);
+        padding: 1.5rem;
+        text-align: right;
         border-radius: 30px;
+        width: 100%;
+        max-width: 800px;
+        margin: 1rem;
+        min-height: 400px;
+        
+        p{
+            text-wrap: wrap;
+        }
+        a{
+            background-color: #fff;
+            padding: 0.5rem;
+            font-weight: bold;
+            border-radius: 30px;
+
+        }
+
     }
 }
 
-#pop-produkter nav ul{ 
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    li{
-        border: #000 solid 1px;
-        padding: 0.5rem;
-        margin: auto;
-        width: 100px;
-        border-radius: 30px;
-        text-align: center;
+#pop-produkter{ 
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    nav{
+        max-width: 400px;
+        margin: 0 auto;
+        ul{ 
+            display: flex;
+            
+            padding: 0;
+            
+        
+            li{
+                border: #000 solid 1px;
+                padding: 0.5rem;
+                margin: auto;
+                width: 100px;
+                border-radius: 30px;
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -108,6 +146,7 @@ header nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    
     article{
         border: #000 solid 1px;
         margin: 8px;
@@ -117,7 +156,34 @@ header nav{
     }
 }
 
+section form{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    input{
+        padding: 1rem;
+        margin: 5px;
+    }
+
+    button{
+        width: fit-content;
+        padding: 15px;
+        margin: 20px 10px;
+        background-color: #4d4d4d;
+        color: #fff;
+    }
+}
+
+.hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
 footer{
+    border-top: 1px solid #000;
+    margin-top: 50px;
     section{ 
         h5{
             font-size: 1.5rem;
@@ -149,5 +215,7 @@ footer{
 }
 
 @media only screen and (min-width:800px){
-    
+    #banner{
+        max-width: 70%;
+    }
 }
