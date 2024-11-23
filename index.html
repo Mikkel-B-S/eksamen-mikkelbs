@@ -37,13 +37,13 @@
             </ul>
             <ul id="bruker-meny">
                 <li>
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" aria-label="profil"><i class="fa-regular fa-user"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#" aria-label="favoriter"><i class="fa-regular fa-heart"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" aria-label="handlevogn"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
             </ul>
         </nav>
@@ -82,7 +82,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="flex-container">
                 <article class="produktkort">  
                     <a href="products.html">
                         <img src="https://picsum.photos/400" alt="bildet av Product Name">
@@ -125,7 +124,6 @@
                     </a>
                     <p>kr 1999</p>
                 </article>
-            </div>
         </section>
         <section id="pop-kategorier">
             <h2>våre mest populære kategorier</h2>
@@ -149,26 +147,28 @@
         </section>
         <section id="anmeldelser">
             <h2>Anmeldelser</h2>
-            <article>
-                <img src="https://picsum.photos/id/200/100/" alt="profilbilde">
-                <h4>Karl Ku</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
-            </article>
-            <article>
-                <img src="https://picsum.photos/id/433/100/" alt="profilbilde">
-                <h4>Bjørnar Bjørn</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
-            </article>
-            <article>
-                <img src="https://picsum.photos/id/577/100/" alt="profilbilde">
-                <h4>Egil Elg</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
-            </article>
-            <article>
-                <img src="https://picsum.photos/id/593/100/" alt="profilbilde">
-                <h4>Tommy Tiger</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies. -Tommy Tiger</p>
-            </article>
+            <div>
+                <article>
+                    <img src="https://picsum.photos/id/200/100/" alt="profilbilde">
+                    <h4>Karl Ku</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/id/433/100/" alt="profilbilde">
+                    <h4>Bjørnar Bjørn</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/id/577/100/" alt="profilbilde">
+                    <h4>Egil Elg</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies.</p>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/id/593/100/" alt="profilbilde">
+                    <h4>Tommy Tiger</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus efficitur rhoncus. Sed at lorem lacinia, finibus erat vel, sodales lorem. Morbi hendrerit consectetur eros vel varius. Maecenas nec rhoncus est. Maecenas at libero vitae velit gravida porta vel in velit. Cras egestas arcu sit amet elit lacinia, in porta diam condimentum. Praesent sed mi mattis, ullamcorper tortor eu, ultricies. -Tommy Tiger</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
@@ -215,16 +215,16 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://no.pinterest.com/" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a>
                     </li>
                 </ul>
             </nav>
