@@ -12,27 +12,7 @@ body{
     
 }
 
-nav form{ 
-    border: #000 solid 1px;
-    border-radius: 30px;
-    width: 70%;
-    margin: 0px auto;
-    padding: 0px;
-    
-    input{
-        border-radius: 30px;
-        border: none;
-        padding: 7px 39px 7px 20px;
-    
-    }
 
-    button{
-        background-color: #fff;
-        border: none;
-        padding: 7px 17px;
-        border-radius: 30px;
-    }
-}
 
 ul{
     list-style: none;
@@ -49,16 +29,35 @@ img{
 
 header nav{ 
 
-    
-    form{
+    form{ 
+        border: #000 solid 1px;
+        border-radius: 30px;
+        width: 70%;
+        margin: 0px auto;
+        padding: 0px;
         width: 263px;
+        height: 35px;
         
         label{
             visibility: hidden;
             position:absolute;
         }
-    }
+    
+        input{
+            border-radius: 30px;
+            border: none;
+            padding: 7px 39px 7px 20px;
+        
+            }
 
+        button{
+            background-color: #fff;
+            border: none;
+            padding: 7px 17px;
+            border-radius: 30px;
+            }
+     }
+    
     
     ul{
         list-style: none;
@@ -158,10 +157,7 @@ header nav{
 }
 
 #anmeldelser{
-    h2{
-        
-       
-    }
+
     div{
         display: flex;
         overflow: auto;
@@ -179,10 +175,6 @@ header nav{
             img{
                 margin: 10px;
                 border-radius: 100px;
-            }
-
-            h4{
-
             }
 
             p{
@@ -212,10 +204,7 @@ section form{
     }
 }
 
-.hidden{
-    visibility: hidden;
-    position: absolute;
-}
+
 
 footer{
     border-top: 1px solid #000;
@@ -261,8 +250,9 @@ footer{
     header{
         grid-column: 2/3;
         grid-row: 1/2;
-    }
-
+        
+    
+        }
     main{
         grid-column: 2/3;
         grid-row: 2/3; 
